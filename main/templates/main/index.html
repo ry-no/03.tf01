@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TF_연습방</title>
+<!--    <link rel="stylesheet" href="./css/main.css">-->
+</head>
+<body style="text-align: center;">
+    <h1>반갑습니다.</h1>
+    <h3>아래 버튼을 선택하세요</h3>
+    <div>
+        <a href="/main"><button>홈으로</button></a>
+        <a href="/accounts/login"><button>로그인</button></a>
+        <a href="/accounts/logout"><button>로그아웃</button></a>
+        <a href="/accounts/signup"><button>회원가입</button></a>
+        <a href="/board/"><button>게시판</button></a>
+        <a href="/board/create/"><button>글등록</button></a>
+    </div>
+
+    <div style="margin-top:20px;">
+        <a href="/admin/board/article/"><button>게시판 관리자</button></a>
+        <a href="/admin/login/?next=/admin/"><button>관리자</button></a>
+    </div>
+    <div style="border: 1px #000 solid; margin : 20px 0px;"></div>
+    {% block contents %}
+    {% endblock contents %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--accounts/templates/accounts/signup.html-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div style="margin-bottom: 50px; text-align: center;">
+        <a href="/main"><button style="width:300px; height: 30px;">홈으로</button></a>
+    </div>
+    <h2>Sign up</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+
+</html>

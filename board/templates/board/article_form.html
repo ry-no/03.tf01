@@ -1,0 +1,22 @@
+<!--board/templates/board/article_form.html-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div style="margin-bottom: 50px; text-align: center;">
+        <a href="/main"><button style="width:300px; height: 30px;">홈으로</button></a>
+        <a href="/admin"><button style="width:300px; height: 30px;">관리자</button></a>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="저장">
+    </form>
+</body>
+
+</html>
